@@ -11,6 +11,7 @@ function affix(el, opt) {
   this.bottom = opt.bottom || 0;
   this.start = opt.top ? top - opt.top : 0;
   this.top = opt.top || top;
+  this.width = opt.width || width;
   this.position = el.style.position;
   var check = this.checkPosition.bind(this);
   window.addEventListener('scroll', check);
